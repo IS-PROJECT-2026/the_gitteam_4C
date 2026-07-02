@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me — [Your Full Name]</title>
+    <title>About Me — Darrel Kariuki</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +18,6 @@
         margin: 0;
         padding: 0;
       }
-
       :root {
         --vinyl: #0a0a0a;
         --vinyl-mid: #161616;
@@ -34,11 +33,9 @@
         --cream: #faf5ec;
         --gold: #b8962e;
       }
-
       html {
         height: 100%;
       }
-
       body {
         font-family: "Playfair Display", Georgia, serif;
         background: #2a2520;
@@ -49,8 +46,6 @@
         padding: 40px 20px 60px;
         -webkit-font-smoothing: antialiased;
       }
-
-      /* ── SLEEVE WRAPPER ───────────────────────────────────────────────────────── */
       .sleeve {
         width: 100%;
         max-width: 980px;
@@ -61,8 +56,6 @@
           0 24px 80px rgba(0, 0, 0, 0.7),
           0 4px 16px rgba(0, 0, 0, 0.5);
       }
-
-      /* ── LEFT: ALBUM COVER ────────────────────────────────────────────────────── */
       .cover {
         background: var(--vinyl);
         position: relative;
@@ -71,8 +64,6 @@
         display: flex;
         flex-direction: column;
       }
-
-      /* Vinyl groove rings — the signature CSS technique */
       .grooves {
         position: absolute;
         inset: 0;
@@ -86,8 +77,6 @@
         pointer-events: none;
         z-index: 1;
       }
-
-      /* Subtle vignette */
       .vignette {
         position: absolute;
         inset: 0;
@@ -99,8 +88,6 @@
         pointer-events: none;
         z-index: 2;
       }
-
-      /* Label area top */
       .cover-label-top {
         position: relative;
         z-index: 10;
@@ -109,7 +96,6 @@
         align-items: center;
         justify-content: space-between;
       }
-
       .label-logo {
         font-family: "Space Mono", monospace;
         font-size: 9px;
@@ -120,15 +106,12 @@
         border: 1px solid var(--gold);
         padding: 3px 8px;
       }
-
       .label-cat {
         font-family: "Space Mono", monospace;
         font-size: 9px;
         color: rgba(255, 255, 255, 0.3);
         letter-spacing: 1px;
       }
-
-      /* Photo sits centre-cover */
       .cover-photo-wrap {
         position: relative;
         z-index: 10;
@@ -138,7 +121,6 @@
         justify-content: center;
         padding: 20px 32px;
       }
-
       .cover-photo {
         width: 200px;
         height: 200px;
@@ -154,8 +136,6 @@
         cursor: pointer;
         position: relative;
       }
-
-      /* Inner groove ring around photo */
       .cover-photo::before {
         content: "";
         position: absolute;
@@ -164,7 +144,6 @@
         border: 1px solid rgba(255, 255, 255, 0.06);
         pointer-events: none;
       }
-
       .cover-photo::after {
         content: "";
         position: absolute;
@@ -173,18 +152,15 @@
         border: 1px solid rgba(255, 255, 255, 0.04);
         pointer-events: none;
       }
-
       .cover-photo img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         display: block;
       }
-
       .upload-icon {
         opacity: 0.2;
       }
-
       .upload-hint {
         font-family: "Space Mono", monospace;
         font-size: 9px;
@@ -194,14 +170,11 @@
         letter-spacing: 0.5px;
         text-transform: uppercase;
       }
-
-      /* Cover text bottom */
       .cover-text {
         position: relative;
         z-index: 10;
         padding: 0 28px 28px;
       }
-
       .cover-artist {
         font-size: 11px;
         font-weight: 400;
@@ -211,7 +184,6 @@
         font-family: "Space Mono", monospace;
         margin-bottom: 8px;
       }
-
       .cover-title {
         font-size: clamp(28px, 5vw, 44px);
         font-weight: 900;
@@ -220,18 +192,15 @@
         letter-spacing: -1px;
         margin-bottom: 12px;
       }
-
       .cover-title em {
         font-style: italic;
         color: var(--red2);
       }
-
       .cover-genre-row {
         display: flex;
         align-items: center;
         gap: 10px;
       }
-
       .genre-tag {
         font-family: "Space Mono", monospace;
         font-size: 8.5px;
@@ -242,15 +211,12 @@
         border: 1px solid rgba(184, 150, 46, 0.4);
         padding: 3px 8px;
       }
-
       .cover-year {
         font-family: "Space Mono", monospace;
         font-size: 9px;
         color: rgba(255, 255, 255, 0.25);
         letter-spacing: 1px;
       }
-
-      /* ── RIGHT: LINER NOTES ───────────────────────────────────────────────────── */
       .liner {
         background: var(--paper);
         padding: 32px 36px 40px;
@@ -260,8 +226,6 @@
         position: relative;
         overflow: hidden;
       }
-
-      /* Subtle aged paper texture via gradient */
       .liner::before {
         content: "";
         position: absolute;
@@ -276,13 +240,10 @@
         pointer-events: none;
         z-index: 0;
       }
-
       .liner > * {
         position: relative;
         z-index: 1;
       }
-
-      /* Liner header */
       .liner-masthead {
         display: flex;
         align-items: flex-start;
@@ -291,7 +252,6 @@
         padding-bottom: 14px;
         border-bottom: 1.5px solid var(--ink);
       }
-
       .masthead-left h2 {
         font-size: 11px;
         font-weight: 400;
@@ -301,7 +261,6 @@
         font-family: "Space Mono", monospace;
         margin-bottom: 2px;
       }
-
       .masthead-left p {
         font-size: 22px;
         font-weight: 700;
@@ -309,11 +268,9 @@
         line-height: 1.1;
         letter-spacing: -0.3px;
       }
-
       .masthead-right {
         text-align: right;
       }
-
       .masthead-right a {
         display: block;
         font-family: "Space Mono", monospace;
@@ -323,23 +280,18 @@
         letter-spacing: 0.5px;
         line-height: 1.8;
       }
-
       .masthead-right a:hover {
         text-decoration: underline;
       }
-
-      /* ── NOTES SECTION ────────────────────────────────────────────────────────── */
       .note-section {
         margin-bottom: 18px;
         padding-bottom: 18px;
         border-bottom: 0.5px solid var(--paper3);
       }
-
       .note-section:last-of-type {
         border-bottom: none;
         margin-bottom: 0;
       }
-
       .note-kicker {
         font-family: "Space Mono", monospace;
         font-size: 8px;
@@ -349,7 +301,6 @@
         color: var(--red);
         margin-bottom: 3px;
       }
-
       .note-heading {
         font-size: 15px;
         font-weight: 700;
@@ -357,7 +308,6 @@
         margin-bottom: 5px;
         line-height: 1.2;
       }
-
       .note-prompt {
         font-size: 10.5px;
         font-style: italic;
@@ -366,7 +316,6 @@
         line-height: 1.5;
         font-family: "Playfair Display", serif;
       }
-
       .note-body {
         font-size: 12.5px;
         color: var(--ink2);
@@ -374,15 +323,12 @@
         font-family: "Playfair Display", serif;
         font-style: italic;
       }
-
-      /* ── CREDITS BLOCK (tech stack) ───────────────────────────────────────────── */
       .credits-block {
         background: var(--paper2);
         border: 0.5px solid var(--paper3);
         padding: 12px 14px;
         font-family: "Space Mono", monospace;
       }
-
       .credits-row {
         display: grid;
         grid-template-columns: 100px 1fr;
@@ -391,11 +337,9 @@
         line-height: 2;
         border-bottom: 0.5px dashed var(--paper3);
       }
-
       .credits-row:last-child {
         border-bottom: none;
       }
-
       .credits-key {
         color: var(--ink3);
         font-weight: 700;
@@ -403,25 +347,16 @@
         text-transform: uppercase;
         font-size: 9px;
       }
-
       .credits-val {
         color: var(--ink2);
         font-weight: 400;
         font-style: italic;
       }
-
-      .credits-val.placeholder {
-        color: var(--ink3);
-        opacity: 0.6;
-      }
-
-      /* ── TRACK LISTING (skills) ───────────────────────────────────────────────── */
       .tracklist {
         display: flex;
         flex-direction: column;
         gap: 0;
       }
-
       .track {
         display: grid;
         grid-template-columns: 22px 1fr 28px;
@@ -431,18 +366,15 @@
         border-bottom: 0.5px solid var(--paper3);
         font-size: 11.5px;
       }
-
       .track:last-child {
         border-bottom: none;
       }
-
       .track-num {
         font-family: "Space Mono", monospace;
         font-size: 9px;
         color: var(--ink3);
         text-align: right;
       }
-
       .track-title {
         font-family: "Playfair Display", serif;
         font-style: italic;
@@ -450,15 +382,12 @@
         font-size: 12px;
         line-height: 1.4;
       }
-
       .track-dur {
         font-family: "Space Mono", monospace;
         font-size: 8px;
         color: var(--ink3);
         text-align: right;
       }
-
-      /* ── LINER FOOTER ─────────────────────────────────────────────────────────── */
       .liner-footer {
         margin-top: auto;
         padding-top: 16px;
@@ -469,7 +398,6 @@
         flex-wrap: wrap;
         gap: 8px;
       }
-
       .liner-footer-copy {
         font-family: "Space Mono", monospace;
         font-size: 8px;
@@ -477,7 +405,6 @@
         letter-spacing: 1px;
         line-height: 1.6;
       }
-
       .liner-footer-back {
         font-family: "Space Mono", monospace;
         font-size: 9px;
@@ -485,12 +412,9 @@
         text-decoration: none;
         letter-spacing: 0.5px;
       }
-
       .liner-footer-back:hover {
         text-decoration: underline;
       }
-
-      /* ── RESPONSIVE ───────────────────────────────────────────────────────────── */
       @media (max-width: 720px) {
         body {
           padding: 0 0 40px;
@@ -510,7 +434,6 @@
           padding: 24px 24px 32px;
         }
       }
-
       @media (prefers-reduced-motion: reduce) {
         * {
           transition: none !important;
@@ -520,27 +443,20 @@
   </head>
   <body>
     <div class="sleeve">
-      <!-- ══ LEFT: ALBUM COVER ════════════════════════════════════════════════════ -->
       <div class="cover">
         <div class="grooves" aria-hidden="true"></div>
         <div class="vignette" aria-hidden="true"></div>
-
         <div class="cover-label-top">
           <span class="label-logo">ICS Records</span>
           <span class="label-cat">CAP–2025–04</span>
         </div>
-
         <div class="cover-photo-wrap">
           <div
             class="cover-photo"
             role="img"
-            aria-label="Your profile photo — see instructions below to replace"
+            aria-label="Darrel Kariuki profile photo"
           >
-            <!--
-          TO ADD YOUR PHOTO:
-          Delete the svg and span below, then paste:
-          <img src="images/your-photo.jpg" alt="Photo of [Your Name]">
-        -->
+            <!-- TO ADD YOUR PHOTO: Replace the SVG + span below with: <img src="YOUR-PHOTO-URL.jpg" alt="Darrel Kariuki"> -->
             <svg
               class="upload-icon"
               width="28"
@@ -559,19 +475,16 @@
             <span class="upload-hint">place your<br />photo here</span>
           </div>
         </div>
-
         <div class="cover-text">
-          <p class="cover-artist">[Your Full Name]</p>
+          <p class="cover-artist">Darrel Kariuki</p>
           <h1 class="cover-title">About<br /><em>Me.</em></h1>
           <div class="cover-genre-row">
             <span class="genre-tag">Software</span>
-            <span class="genre-tag">[Your Role]</span>
+            <span class="genre-tag">Engineer</span>
             <span class="cover-year">© 2025</span>
           </div>
         </div>
       </div>
-
-      <!-- ══ RIGHT: LINER NOTES ═══════════════════════════════════════════════════ -->
       <div class="liner">
         <div class="liner-masthead">
           <div class="masthead-left">
@@ -579,11 +492,14 @@
             <p>The full story.</p>
           </div>
           <div class="masthead-right">
-            <a href="[Your LinkedIn URL]" target="_blank" rel="noopener"
+            <a
+              href="https://ke.linkedin.com/in/darrel-kanyugo-361b61277"
+              target="_blank"
+              rel="noopener"
               >LinkedIn ↗</a
             >
             <a
-              href="https://github.com/[your-username]"
+              href="https://github.com/darrelkanyugo"
               target="_blank"
               rel="noopener"
               >GitHub ↗</a
@@ -592,133 +508,125 @@
           </div>
         </div>
 
-        <!-- MISSION -->
         <div class="note-section">
           <p class="note-kicker">Side A — Track 1</p>
           <h2 class="note-heading">My Coding Mission</h2>
-          <p class="note-prompt">
-            What kind of real-world problems do you want to solve using
-            technology? Write 2–3 sentences.
+          <p class="note-body">
+            I am passionate about building efficient, scalable systems that
+            solve real-world challenges, especially in emerging markets like
+            Kenya. Whether it's optimizing backend services with
+            high-performance languages or creating intuitive user experiences,
+            my goal is to develop technology that drives innovation and
+            accessibility. I thrive on turning complex problems into elegant,
+            maintainable solutions that make a tangible impact.
           </p>
-          <p class="note-body">[Write your answer here]</p>
         </div>
 
-        <!-- TECH STACK — credits block -->
         <div class="note-section">
           <p class="note-kicker">Side A — Track 2</p>
           <h2 class="note-heading">My Tech Stack</h2>
-          <p class="note-prompt">
-            What tools do you know? What two technologies do you want to learn
-            next?
-          </p>
           <div class="credits-block">
-            <!--
-          Replace "e.g." rows below with YOUR actual tools.
-          Add or remove rows as needed.
-        -->
             <div class="credits-row">
               <span class="credits-key">Produced by</span>
-              <span class="credits-val placeholder">e.g. Python</span>
+              <span class="credits-val">Zig, Python, Golang</span>
             </div>
             <div class="credits-row">
               <span class="credits-key">Mixed in</span>
-              <span class="credits-val placeholder">e.g. JavaScript</span>
+              <span class="credits-val">JavaScript, TypeScript</span>
             </div>
             <div class="credits-row">
               <span class="credits-key">Engineered on</span>
-              <span class="credits-val placeholder">e.g. HTML &amp; CSS</span>
+              <span class="credits-val">Modern web &amp; systems tools</span>
             </div>
             <div class="credits-row">
               <span class="credits-key">Next session</span>
-              <span class="credits-val placeholder"
-                >e.g. React — coming soon</span
+              <span class="credits-val"
+                >React &amp; advanced cloud platforms</span
               >
             </div>
             <div class="credits-row">
               <span class="credits-key">Learning</span>
-              <span class="credits-val placeholder"
-                >e.g. Docker — in progress</span
+              <span class="credits-val"
+                >System-level optimization &amp; AI integration</span
               >
             </div>
           </div>
         </div>
 
-        <!-- PASSIONS -->
         <div class="note-section">
           <p class="note-kicker">Side A — Track 3</p>
           <h2 class="note-heading">My Passions</h2>
-          <p class="note-prompt">
-            What do you love doing when you are not looking at a computer
-            screen?
-          </p>
           <p class="note-body">
-            [e.g., playing football, baking, photography, reading]
+            Reading thought-provoking books and diving deeper into coding
+            challenges even in my free time — constantly exploring new ideas and
+            refining my craft.
           </p>
         </div>
 
-        <!-- SKILLS — tracklist -->
         <div class="note-section">
           <p class="note-kicker">Side B — Track 1</p>
           <h2 class="note-heading">Skills Acquired</h2>
-          <p class="note-prompt">
-            The three most valuable life or professional skills from your
-            degree.
-          </p>
           <div class="tracklist">
             <div class="track">
               <span class="track-num">1.</span>
               <span class="track-title"
-                >[Skill 1 — e.g., Breaking complex problems into smaller
-                steps]</span
+                >Web development — Building responsive and scalable
+                applications</span
               >
               <span class="track-dur">★★★</span>
             </div>
             <div class="track">
               <span class="track-num">2.</span>
               <span class="track-title"
-                >[Skill 2 — e.g., Collaborating under pressure in a team]</span
+                >Mobile development — Creating cross-platform user
+                experiences</span
               >
               <span class="track-dur">★★★</span>
             </div>
             <div class="track">
               <span class="track-num">3.</span>
               <span class="track-title"
-                >[Skill 3 — e.g., Communicating technical ideas clearly]</span
+                >Machine learning — Applying intelligent systems to solve
+                problems</span
               >
               <span class="track-dur">★★★</span>
             </div>
           </div>
         </div>
 
-        <!-- ENERGY -->
         <div class="note-section">
           <p class="note-kicker">Side B — Track 2</p>
           <h2 class="note-heading">Energy &amp; Engagement</h2>
-          <p class="note-prompt">
-            Which classes or projects brought you the most energy, and why?
+          <p class="note-body">
+            Data Structures and Algorithms ignited my passion for efficient
+            problem-solving, teaching me how to think critically under
+            constraints. Artificial Intelligence projects energized me the most
+            because they combine creativity with technical depth, allowing me to
+            build systems that learn and adapt — the future of software
+            engineering.
           </p>
-          <p class="note-body">[Write your answer here]</p>
         </div>
 
-        <!-- LOOKING BACK -->
         <div class="note-section">
           <p class="note-kicker">Side B — Track 3</p>
           <h2 class="note-heading">Looking Back</h2>
-          <p class="note-prompt">
-            If you were to give advice to your first-year self, what would it
-            be?
+          <p class="note-body">
+            Stay consistent with daily coding practice and don't fear failure —
+            every bug is a lesson. Build projects early and often instead of
+            just consuming theory, and network with peers and mentors from day
+            one. The journey is as important as the destination.
           </p>
-          <p class="note-body">[Write your answer here]</p>
         </div>
 
-        <!-- CIRCLE OF INFLUENCE -->
         <div class="note-section">
           <p class="note-kicker">Hidden Track</p>
           <h2 class="note-heading">Circle of Influence</h2>
-          <p class="note-prompt">
-            Who are the mentors, peers, or lecturers who have poured into you?
+          <p class="note-body">
+            Thank you to the lecturers and peers at Strathmore University who
+            challenged and supported me throughout the ICS program. Their
+            guidance has been instrumental in shaping my technical and
+            professional growth.
           </p>
-          <p class="note-body">[Write your answer here]</p>
         </div>
 
         <footer class="liner-footer">
@@ -731,8 +639,6 @@
           >
         </footer>
       </div>
-      <!-- /liner -->
     </div>
-    <!-- /sleeve -->
   </body>
 </html>
